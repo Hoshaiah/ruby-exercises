@@ -18,7 +18,7 @@ class User
     end
 
     def change_password=(new_password)
-        password = new_password
+        @password = new_password
     end
 
     protected
@@ -28,6 +28,7 @@ class User
 end
 
 class Admin < User
+    attr_accessor :password
     include AdminPermisson
 
     def admin_login
