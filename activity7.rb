@@ -11,6 +11,7 @@ module BuyerPermission
 end
 
 class User
+    attr_accessor :password
     def initialize(username, password, ip_address)
         @username = username
         @password = password
@@ -28,7 +29,6 @@ class User
 end
 
 class Admin < User
-    attr_accessor :password
     include AdminPermisson
 
     def admin_login
