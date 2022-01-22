@@ -29,11 +29,19 @@ end
 
 class Admin < User
     include AdminPermisson
+
+    def admin_login
+        login
+    end
 end
 
 
 class Buyer < User
     include BuyerPermission
+
+    def buyer_login
+        login
+    end
 end
 
 
