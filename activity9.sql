@@ -22,6 +22,8 @@ UPDATE students
 SET first_name = 'Ivan', middle_name= 'Ingram', last_name='Howard', age='25', location='Bulacan'
 WHERE id=1
 
+DELETE FROM students WHERE id=6
+
 SELECT COUNT(id) FROM students
 
 SELECT * FROM students
